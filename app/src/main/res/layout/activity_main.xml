@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classic_rock_hits"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/rad_journey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="radio_click"
+            android:text="@string/journey" />
+
+        <RadioButton
+            android:id="@+id/rad_queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="radio_click"
+            android:text="@string/queen" />
+
+        <RadioButton
+            android:id="@+id/rad_eagles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="radio_click"
+            android:text="@string/the_eagles" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/my_pic"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/eagles" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="170dp"
+        android:id="@+id/start_button"
+        android:text="@string/Start_text"
+        android:onClick="start_song"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="170dp"
+        android:text="@string/Stop_text"
+        android:id="@+id/stop__button"
+        android:onClick="stop_song"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music Player App</string>
+    <string name="queen">Queen</string>
+    <string name="classic_rock_hits">Classic Rock Hits</string>
+    <string name="journey">Journey</string>
+    <string name="the_eagles">The Eagles</string>
+    <string name="todo">TODO</string>
+    <string name ="Start_text">Start</string>
+    <string name ="Stop_text">Stop</string>
+
+</resources>
